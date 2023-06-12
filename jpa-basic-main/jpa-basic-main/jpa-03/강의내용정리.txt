@@ -1,0 +1,9 @@
+EntityManager가 제공하는 Method
+ -- persist() : 저장,  
+ -- find() :    조회 -> 특정한 식별자를 갖는 객체를 조회 ( find(Class<T> entityClass, Object primaryKey) )
+                        entitytype,IDtype이 맞아야함 일치하지 않을 경우 Exception발생
+                수정 -> transaction범위 내에서 변경된 값을 자동 반영
+                삭제 -> remove(Object entity) / 삭제 대상 존재 하지 않을 시 Exception발생
+                
+ -- remove()
+ -- merge()

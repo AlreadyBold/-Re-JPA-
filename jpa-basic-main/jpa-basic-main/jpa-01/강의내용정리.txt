@@ -1,0 +1,15 @@
+Project Setting 
+  -MAVEN 
+  -JDK17 ~ JDK11
+
+
+
+JPA 3.0 ( Jakarta Persistence API ) 
+  -자바객체와 관계형DB 간의 매핑 처리를 위한 API
+  -스프링과 같이 사용
+  -어노테이션을 이용한 매핑 ( XML 파일도 이용가능 )
+  -기본적인 타입 ( String, int, LocalDate) / 커스텀 타입 변환기 / 밸류 타입 매핑 지원 
+
+
+
+-- https://github.com/madvirus/jpa-basic/jpa-01 : 소스코드 

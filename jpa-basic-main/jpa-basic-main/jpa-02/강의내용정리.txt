@@ -1,0 +1,17 @@
+JPA의 특징 ☆★
+ -- Persistence Context ( 영속 컨텍스트 )
+  -- EntityManager 단위로 Persistence Context 관리
+  -- Commit 시점에 Persistence Context의 변경 내역을 DB에 반영 ( 변경 쿼리 실행 )
+  커밋 직전에 쿼리가 실행되는 .. ? -- > 궁금증 해결
+
+기본구조
+ - EntityManagerFactory 초기화
+ - DB작업이 필요할때 ' 마다 '
+  - EntityManager 생성
+  - entityManager로 DB 조작
+  - EntityTransaction으로 트랜잭션 관리
+ - 스프링과 연동 시 
+  - 대부분 스프링이 대신처리하므로 매핑설정 중심으로 작업
+ - Persistence Context ( 영속 컨텍스트 )
+  - Entity를 Memory에 보관
+  - 변경을 추적해서 transaction commit 시점에 DB에 반영 

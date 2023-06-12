@@ -14,8 +14,7 @@ public class UserSaveMain {
     private static Logger logger = LoggerFactory.getLogger(UserSaveMain.class);
 
     public static void main(String[] args) {
-        EntityManagerFactory emf =
-                Persistence.createEntityManagerFactory("jpabegin");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabegin");
 
         EntityManager entityManager = emf.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
@@ -24,6 +23,7 @@ public class UserSaveMain {
             User user = new User("user@user.com", "user", LocalDateTime.now());
             entityManager.persist(user);
             logger.info("EntityManager.persist 호출함");
+            // insert 쿼리 실행 지점 //
             transaction.commit();
             logger.info("EntityTransaction.commit 호출함");
         } catch (Exception ex) {

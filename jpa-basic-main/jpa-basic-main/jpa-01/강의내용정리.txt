@@ -10,6 +10,11 @@ JPA 3.0 ( Jakarta Persistence API )
   -어노테이션을 이용한 매핑 ( XML 파일도 이용가능 )
   -기본적인 타입 ( String, int, LocalDate) / 커스텀 타입 변환기 / 밸류 타입 매핑 지원 
 
+-- Duplicate entry 'user@user.com' for key 'PRIMARY' : PK 중복 오류
 
+마침표
+ -- 간단한 설정으로 클래스와 테이블간 매핑처리 
+ -- EntityManager를 이용해서 DB 연동
+ -- 객체 ( 클래스 ) 변경만으로 DB테이블 업데이트
+ -- ☆★ 쿼리 작성하지 않았음 ☆★ JPA 사용하는 장점 중 1가지
 
--- https://github.com/madvirus/jpa-basic/jpa-01 : 소스코드 

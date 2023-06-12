@@ -7,8 +7,7 @@ import java.time.LocalDateTime;
 
 public class UserSaveMain {
     public static void main(String[] args) {
-        EntityManagerFactory emf =
-                Persistence.createEntityManagerFactory("jpabegin");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabegin");
 
         EntityManager entityManager = emf.createEntityManager();
         EntityTransaction transaction = entityManager.getTransaction();
@@ -23,7 +22,6 @@ public class UserSaveMain {
         } finally {
             entityManager.close();
         }
-
         emf.close();
     }
 }

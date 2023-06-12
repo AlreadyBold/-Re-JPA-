@@ -7,6 +7,7 @@ import jakarta.persistence.Persistence;
 import jpabasic.reserve.domain.User;
 
 public class UserGetMain {
+
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabegin");
 

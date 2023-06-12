@@ -3,7 +3,7 @@
 
 ## JPA 기초 내용
 
-* JPA 기초 01 일단 해보기: https://youtu.be/Zwq2McbFOn4
+* JPA 기초 01 일단 해보기: https://youtu.be/Zwq2McbFOn4  -- 2023/06/12 완 
 * JPA 기초 02 코드 구조, 영속 컨텍스트: https://youtu.be/7ljqL8ThUts
 * JPA 기초 03 엔티티 CRUD 처리: https://youtu.be/kmCKAwOie_I
 * JPA 기초 04 엔티티 매핑: https://youtu.be/SbMJVuv8Iyo
@@ -41,23 +41,10 @@
 
 * https://dev.mysql.com/downloads/
 
-#### 도커 이용 설치
-컨테이너 생성: 
-```
-docker create --name mysql8 -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:8.0.27
-```
-MYSQL_ROOT_PASSWORD 환경변수는 DB root 사용자 암호를 지정하는데 위 명령어는 root 암호로 root를 사용
-
-컨테이너 시작:
-```
-docker start mysql8
-```
-
 ### 데이터베이스와 계정 생성
 
 root 사용자로 MySQL에 접속한 뒤에 jpabegin DB와 jpauser 사용자 생성
 
-```
 create database jpabegin CHARACTER SET utf8mb4;
 
 CREATE USER 'jpauser'@'localhost' IDENTIFIED BY 'jpapass';

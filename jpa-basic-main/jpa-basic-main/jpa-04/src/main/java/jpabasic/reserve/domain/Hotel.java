@@ -4,11 +4,11 @@ import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "hotel_info")
+@Entity // 매핑 대상 엔티티
+@Table(name = "hotel_info") // hotel_info 테이블에 매핑
 public class Hotel {
-    @Id
-    @Column(name = "hotel_id")
+    @Id // 식별자로 매핑
+    @Column(name = "hotel_id") // hotel_id 컬럼에 매핑
     private String id;
 
     @Column(name = "nm")
@@ -16,7 +16,7 @@ public class Hotel {
 
     private int year;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // 열거타입 이름을 값으로 저장
     private Grade grade;
 
     private LocalDateTime created;

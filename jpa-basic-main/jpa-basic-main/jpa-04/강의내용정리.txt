@@ -1,0 +1,29 @@
+JPA의 기본적인 어노테이션 
+ - @Entity : Entity Class에 설정해야하는 필수 
+ - @Table : 매핑해야할 Table 지정
+ - @Id : 식별자 속성에 설정해야하는 필수 
+ - @Enumerated : enum 타입 매핑할 때 설정 
+ --> 거의 안쓰는 것들 : @Temporal / @Basic 
+
+@Table 
+ 속성 : name = 테이블이름 / catalog : 카탈로그 이름 ( MYSQL DB 이름 ) / schema : 스키마 이름 ( 오라클 스키마 이름 ) 
+
+@Enumerated
+ 설정값 :   
+    EnumType.STRING = enum 타입 값 이름을 저장 / 문자열 타입 column에 매핑
+    ( 잘 사용하지 않는다고 함 ) EnumType.ORDINAL ( 기본값 ) : enum타입의 값의 순서를 저장 / 숫자 타입 column에 매핑
+
+Entity Class 제약 조건
+ -- @Entity 적용해야함
+ -- @Id 적용해야함
+ -- 인자없는 기본 생성자 필요함
+ -- 기본 생성자는 public 이나 protected 이어야 함
+ -- 최상위 클래스여야 함 ( 중첩클래스 x )
+ -- final이면 안 됨
+
+Entity Class 접근 타입
+ -- 두개의 접근 타입 : 필드 접근 = 필드 값을 사용해서 매핑 / property 접근 = getter,setter 메소드 사용하여 매핑
+ -- 설정 방법 : 
+        @Id를 필드에 붙이면 필드접근 ( 강사님 선호 / 불필요한 setter를 만들지 않아도 됨 )
+        @Id를 getter 에 붙이면 프로퍼티 접근 
+        @Access 사용해서 명시적으로 지정 - 클래스,개별필드에 적용 가능 ( @Access(AccessType.PROPERTY)  /  @Access(AccessType.FIELD)  )

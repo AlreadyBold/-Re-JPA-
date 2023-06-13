@@ -14,7 +14,7 @@
 - JPA 기초 04 엔티티 매핑: https://youtu.be/SbMJVuv8Iyo -- 2023/06/13 완
 - JPA 기초 05 엔티티 식별자 생성 방식: https://youtu.be/Xw9uTs72SVo -- 2023/06/13 완
 - JPA 기초 06 @Embeddable: https://youtu.be/WtS5IszIueA -- 2023/06/13 완
-- JPA 기초 07 @Embeddable 다른 테이블에 매핑하기: https://youtu.be/3_sdQGfL2Lg
+- JPA 기초 07 @Embeddable 다른 테이블에 매핑하기: https://youtu.be/3_sdQGfL2Lg -- 2023/06/13 완
 - JPA 기초 08 값 콜렉션 Set 매핑: https://youtu.be/lQ4-kVeHVGk
 - JPA 기초 09 값 콜렉션 List 매핑 : https://youtu.be/Wq4B5RpIeAY
 - JPA 기초 10 값 콜렉션 Map 매핑: https://youtu.be/CPIgicoqLnM

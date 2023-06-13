@@ -1,0 +1,40 @@
+식별자 생성 방식 
+ - 직접할당
+ - 식별 칼럼 방식 : 저장 시점에 INSERT 쿼리 실행
+ - 시퀀스 사용 방식 : 저장 시점에 시퀀스 사용해서 식별자 생성 
+ - 테이블 사용 방식 : 저장 시점에 테이블 사용해서 식별자 생성 ( 사용빈도 떨어진다는 강사님 의견 -> 시퀀스가 있으면 시퀀스를 쓰던가 AutoIncrement 쓰던가.. )
+
+직접생성방식 : 
+    - @Id 설정 대상에 직접 값 설정
+    - 저장하기전에 생성자 할당, 생성 시점에 전달 ( persistence context ..? ) 
+
+식별 칼럼 방식 : 
+    - DB의 식별 칼럼에 매핑 ( ex. mysql 의 seq )=> DB가 식별자를 생성하므로 객체 생성시에 식별값을 설정하지 않음 
+    - 설정방식 : @GeneratedValue( ??? = GenerationType.IDENTITY )
+    - ☆ INSERT 쿼리를 실행해야 식별자를 알 수 있음 ☆
+        => EntityManager#persist() 호출 시점에 INSERT 쿼리가 실행 됨
+        => persist() 실행할 때 객체에 식별자 값 할당 됨
+
+시퀀스 사용 방식 : 
+    시퀀스를 사용해서 식별자 생성  
+        -> JPA가 식별자 생성 처리 / 객체 생성시에 식별값을 설정하지 안흥ㅁ
+    설정 방식
+        @SequenceGenerator로 시퀀스 생성기 설정
+        @GeneratedValue의 generator로 시퀀스 생성기 지정 
+    EntityManager#persist() 호출 시점에 시퀀스 사용
+        - persist() 실행 시 객체에 식별자 값 할당됨 
+        - INSERT 쿼리는 실행 X
+
+테이블 사용 방식 : 
+    테이블을 시퀀스처럼 사용 / 시퀀스와 비슷함
+        - 테이블에 엔티티를 위한 키를 보관 
+        - 해당 테이블을 이용해서 다음 식별자 생성 
+    설정 방식
+        - @TableGenerator로 테이블 생성기 설정
+        - @GeneratedValue의 generator로 테이블 생성기 지정
+    EntityManager#persist() 호출 시점에 테이블 사용 
+        - persist() 할 때 테이블을 이용해서 식별자 구하고, 이를 Entity에 할당
+        - INSERT 쿼리는 실행 X
+    식별자 생성 , 사용 시 테이블 구조
+        - ENtity 이름 칼럼
+        - 식별자 보관 칼럼

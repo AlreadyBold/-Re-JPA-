@@ -11,8 +11,8 @@
 - JPA 기초 01 일단 해보기: https://youtu.be/Zwq2McbFOn4 -- 2023/06/12 완
 - JPA 기초 02 코드 구조, 영속 컨텍스트: https://youtu.be/7ljqL8ThUts -- 2023/06/12 완
 - JPA 기초 03 엔티티 CRUD 처리: https://youtu.be/kmCKAwOie_I -- 2023/06/12 완
-- JPA 기초 04 엔티티 매핑: https://youtu.be/SbMJVuv8Iyo
-- JPA 기초 05 엔티티 식별자 생성 방식: https://youtu.be/Xw9uTs72SVo
+- JPA 기초 04 엔티티 매핑: https://youtu.be/SbMJVuv8Iyo -- 2023/06/13 완
+- JPA 기초 05 엔티티 식별자 생성 방식: https://youtu.be/Xw9uTs72SVo -- 2023/06/13 완
 - JPA 기초 06 @Embeddable: https://youtu.be/WtS5IszIueA
 - JPA 기초 07 @Embeddable 다른 테이블에 매핑하기: https://youtu.be/3_sdQGfL2Lg
 - JPA 기초 08 값 콜렉션 Set 매핑: https://youtu.be/lQ4-kVeHVGk

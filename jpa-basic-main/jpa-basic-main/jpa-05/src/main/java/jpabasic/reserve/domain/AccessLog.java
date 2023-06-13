@@ -8,15 +8,9 @@ import java.time.LocalDateTime;
 @Table(name = "access_log")
 public class AccessLog {
     @Id
-    @TableGenerator(
-            name = "accessIdGen",
-            table = "id_seq",
-            pkColumnName = "entity",
-            pkColumnValue = "accesslog",
-            valueColumnName = "nextval",
-            initialValue = 0,
-            allocationSize = 1
-    )
+    @TableGenerator(name = "accessIdGen", table = "id_seq", pkColumnName = "entity", pkColumnValue = "accesslog", valueColumnName = "nextval", initialValue = 0,
+            // 다중node 상황 시 문제 발생 가능성이 있기 때문에 1로 설정
+            allocationSize = 1)
     @GeneratedValue(generator = "accessIdGen")
     private Long id;
     private String path;

@@ -13,7 +13,7 @@
 - JPA 기초 03 엔티티 CRUD 처리: https://youtu.be/kmCKAwOie_I -- 2023/06/12 완
 - JPA 기초 04 엔티티 매핑: https://youtu.be/SbMJVuv8Iyo -- 2023/06/13 완
 - JPA 기초 05 엔티티 식별자 생성 방식: https://youtu.be/Xw9uTs72SVo -- 2023/06/13 완
-- JPA 기초 06 @Embeddable: https://youtu.be/WtS5IszIueA
+- JPA 기초 06 @Embeddable: https://youtu.be/WtS5IszIueA -- 2023/06/13 완
 - JPA 기초 07 @Embeddable 다른 테이블에 매핑하기: https://youtu.be/3_sdQGfL2Lg
 - JPA 기초 08 값 콜렉션 Set 매핑: https://youtu.be/lQ4-kVeHVGk
 - JPA 기초 09 값 콜렉션 List 매핑 : https://youtu.be/Wq4B5RpIeAY
@@ -62,3 +62,8 @@ GRANT ALL PRIVILEGES ON jpabegin._ TO 'jpauser'@'%';
 ```
 
 ```
+
+### 참고하면 좋을 만한 블로그 URL
+
+- https://velog.io/@sangwoo0727/JPA-Auto-Increment%EA%B0%80-%ED%8F%AC%ED%95%A8%EB%90%9C-Insert%EC%BF%BC%EB%A6%AC%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%82%98%EA%B0%88%EA%B9%8C
+- 영속성 관련 / Auto Increment가 포함된 Insert쿼리는 언제 나갈까?

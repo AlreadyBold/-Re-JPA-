@@ -1,0 +1,9 @@
+List와 Set매핑의 차이점 => List 에서는 @OrderColumn 사용
+
+조회 ( lazy / eager )
+
+List수정 : 새로 할당 
+
+Entity삭제 ( remove )
+
+Embeddable 타입 List 과 Set은 큰 차이 없음 

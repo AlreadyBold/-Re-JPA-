@@ -1,0 +1,22 @@
+단순 값 Set 매핑
+  @ElementCollection
+  @CollectionTable
+    name = " TABLE 명 "
+    변수명 = @JoinColumn( name = " PK or Join 참고 Column " )
+
+조회 ( lazy / eager )
+  lazy : 지연 조회 방식 ( 기본값 ) 
+  eager : 즉시 조회 방식 ( 한번에 읽어온다. )
+
+수정 ( add / remove )
+
+Set 새로 할당 
+setPermissions( set );
+
+Set.clear()
+
+Embeddable 타입의 Set
+ equal / hashcode method
+
+CollectionTable을 이용한 값 set 매핑
+ - ElementCollection과 @CollectionTable이면 끝

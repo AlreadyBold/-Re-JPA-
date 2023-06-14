@@ -1,0 +1,9 @@
+단순 값 MAP 매핑
+ @MapKeyColumn 사용 
+
+Map에 값을 추가 / 수정 / 삭제
+
+Embeddable Mapping 시 객체 선언 할 때 Map<Object, Embeddable 객체명> 
+
+CollectionTable을 이용한 값 Map 매핑
+ @ElementCollection / @CollectionTable / @MapKeyColumn

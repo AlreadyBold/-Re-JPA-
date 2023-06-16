@@ -18,7 +18,7 @@
 - JPA 기초 08 값 콜렉션 Set 매핑: https://youtu.be/lQ4-kVeHVGk -- 2023/06/14 완
 - JPA 기초 09 값 콜렉션 List 매핑 : https://youtu.be/Wq4B5RpIeAY -- 2023/06/14 완
 - JPA 기초 10 값 콜렉션 Map 매핑: https://youtu.be/CPIgicoqLnM -- 2023/06/14 완
-- JPA 기초 11 값 콜렉션 주의사항: https://youtu.be/yK4Avtxqz-k
+- JPA 기초 11 값 콜렉션 주의사항: https://youtu.be/yK4Avtxqz-k -- 2023/06/16 완
 - JPA 기초 12 영속 컨텍스트 & 라이프사이클: https://youtu.be/tUwg78VkWJ0
 - JPA 기초 13 엔티티 연관 매핑 시작에 앞서: https://youtu.be/rZZSYG__8Jc
 - JPA 기초 14 엔티티 간 1-1 단방향 연관 매핑: https://youtu.be/BhVzS90Ep78

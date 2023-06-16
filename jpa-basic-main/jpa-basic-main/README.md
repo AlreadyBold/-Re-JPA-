@@ -20,7 +20,7 @@
 - JPA 기초 10 값 콜렉션 Map 매핑: https://youtu.be/CPIgicoqLnM -- 2023/06/14 완
 - JPA 기초 11 값 콜렉션 주의사항: https://youtu.be/yK4Avtxqz-k -- 2023/06/16 완
 - JPA 기초 12 영속 컨텍스트 & 라이프사이클: https://youtu.be/tUwg78VkWJ0 -- 2023/06/16 완
-- JPA 기초 13 엔티티 연관 매핑 시작에 앞서: https://youtu.be/rZZSYG__8Jc
+- JPA 기초 13 엔티티 연관 매핑 시작에 앞서: https://youtu.be/rZZSYG__8Jc -- 2023/06/16 완
 - JPA 기초 14 엔티티 간 1-1 단방향 연관 매핑: https://youtu.be/BhVzS90Ep78
 - JPA 기초 15 엔티티 간 N-1 단방향 연관 매핑: https://youtu.be/i8XAqCGcLqw
 - JPA 기초 16 엔티티 간 1-N 단방향 연관 매핑: https://youtu.be/LAA8ICFS8bs
@@ -36,6 +36,11 @@
 - Spring Data JPA 03 정렬 페이징 @Query: https://youtu.be/2-f9RFCT9Ik
 - Spring Data JPA 04 Specification을 이용한 검색 조건 지정: https://youtu.be/-znDGy-BQJk
 - Spring Data JPA 05 기타: https://youtu.be/SYqknEb0wag
+
+## 참고하면 좋을 만한 블로그 URL
+
+- https://velog.io/@sangwoo0727/JPA-Auto-Increment%EA%B0%80-%ED%8F%AC%ED%95%A8%EB%90%9C-Insert%EC%BF%BC%EB%A6%AC%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%82%98%EA%B0%88%EA%B9%8C
+- 영속성 관련 / Auto Increment가 포함된 Insert쿼리는 언제 나갈까?
 
 ## 로컬 환경 구성
 
@@ -58,12 +63,3 @@ CREATE USER 'jpauser'@'%' IDENTIFIED BY 'jpapass';
 
 GRANT ALL PRIVILEGES ON jpabegin._ TO 'jpauser'@'localhost';
 GRANT ALL PRIVILEGES ON jpabegin._ TO 'jpauser'@'%';
-
-```
-
-```
-
-### 참고하면 좋을 만한 블로그 URL
-
-- https://velog.io/@sangwoo0727/JPA-Auto-Increment%EA%B0%80-%ED%8F%AC%ED%95%A8%EB%90%9C-Insert%EC%BF%BC%EB%A6%AC%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%82%98%EA%B0%88%EA%B9%8C
-- 영속성 관련 / Auto Increment가 포함된 Insert쿼리는 언제 나갈까?

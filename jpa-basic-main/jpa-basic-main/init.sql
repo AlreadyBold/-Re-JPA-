@@ -5,3 +5,6 @@ CREATE USER 'jpauser'@'%' IDENTIFIED BY 'jpapass';
 
 GRANT ALL PRIVILEGES ON jpabegin.* TO 'jpauser'@'localhost';
 GRANT ALL PRIVILEGES ON jpabegin.* TO 'jpauser'@'%';
+
+
+-- sql 초기 설정 -- 

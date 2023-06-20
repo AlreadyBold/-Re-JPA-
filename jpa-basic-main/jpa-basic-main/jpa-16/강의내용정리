@@ -1,0 +1,11 @@
+1-N 단방향 연관 
+연관매핑은 진짜 필요할때만 사용할것 
+  연관된 객체 탐색이 쉽다는 이유로 사용하지 말 것 
+  조회 기능은 별도 모델을 만들어 구현 (CQRS)
+  Embeddable 가능 할 경우 Embeddable 사용할 것
+
+콜렉션을 사용한 매핑 
+  Set / List / Map 
+  Set : 참조키를 이용한 1-N 관계 ( @OneToMany / @JoinColumn ) 
+  List : 1-N 단방향 List 연관 매핑 @OneToMany / @JoinColumn / @OrderColumn ( List index 값 저장 )
+  Map : 1-N 단방향 Map 연관 매핑 @OneToMany / @JoinColumn / @MapKeyColumn

@@ -27,7 +27,7 @@
 - JPA 기초 17 영속성 전파 & 연관 고려사항: https://youtu.be/7JAoNNhvsjw -- 2023/06/20 완
 - JPA 기초 18 JPQL 소개: https://youtu.be/UtEhC68GTH0 -- 2023/06/20 완
 - JPA 기초 19 Criteria 소개: https://youtu.be/ZAiH382rUF0 -- 2023/06/20 완
-- JPA 기초 20 기타 AttributeConverter, @Formula, @DynamicUpdate(@DynamicInsert), @Immutable, @Subselect: https://youtu.be/deJnCTkjLyU
+- JPA 기초 20 기타 AttributeConverter, @Formula, @DynamicUpdate(@DynamicInsert), @Immutable, @Subselect: https://youtu.be/deJnCTkjLyU -- 2023/06/21 완
 
 ## Spring Data JPA 기초 내용
 

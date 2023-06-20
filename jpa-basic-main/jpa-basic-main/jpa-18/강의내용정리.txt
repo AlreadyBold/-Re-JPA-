@@ -1,0 +1,25 @@
+JPQL ( JPA Query Language )
+  SQL 쿼리와 유사
+  TABLE 대신 Entity 이름, 속성 사용
+
+JPQL의 기본구조 
+  select ??? from EntityName 
+
+검색조건지정
+  where + and/or/괄호/비교연산자/between/in/like/isnull
+  파라미터 : 
+    이름 사용한 경우 : query.setParameter("hotelId","H-001")
+    인덱스 기반 : query.setParameter(0,"H-001")
+
+정렬순서 : orderby , asc / desc
+
+페이징 처리 : query.setFirstResult(index); 0부터 시작해서 index까지  /  query.setMaxResults(index); 최대 결과 개수 
+
+그외의 ..
+  JOIN 
+  집합함수 : count / max / min / avg / sum . . 
+  Group by / Having
+  콜렉션 관련 비교 : member of, is empty
+  JPQL함수 : .size() / 
+
+주의사항 : 여러테이블 조인 / DBMS에 특화된 쿼리 필요한경우 / subQuery 필요한 경우 / 통계,대량데이터 조회 및 처리 해야 할 경우 ==> SQL사용이 편리할 수 있음 

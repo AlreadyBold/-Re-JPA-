@@ -26,7 +26,7 @@
 - JPA 기초 16 엔티티 간 1-N 단방향 연관 매핑: https://youtu.be/LAA8ICFS8bs -- 2023/06/20 완
 - JPA 기초 17 영속성 전파 & 연관 고려사항: https://youtu.be/7JAoNNhvsjw -- 2023/06/20 완
 - JPA 기초 18 JPQL 소개: https://youtu.be/UtEhC68GTH0 -- 2023/06/20 완
-- JPA 기초 19 Criteria 소개: https://youtu.be/ZAiH382rUF0
+- JPA 기초 19 Criteria 소개: https://youtu.be/ZAiH382rUF0 -- 2023/06/20 완
 - JPA 기초 20 기타 AttributeConverter, @Formula, @DynamicUpdate(@DynamicInsert), @Immutable, @Subselect: https://youtu.be/deJnCTkjLyU
 
 ## Spring Data JPA 기초 내용

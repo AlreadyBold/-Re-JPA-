@@ -1,0 +1,15 @@
+JPA
+SpringBoot + Sprind Data JPA -> 많은 것을 설정해줌
+자동 설정 : persistence.xml / entityManagerFactory
+스프링 연동 : Spring Transaction / EntityManager 연동 
+
+사용법 
+spring-boot-starter-data-jpa ( Maven , Gradel 에 의존 추가 )
+스프링부트 설정 ( datasource 설정 / spring.jpa.database = ??? ( oracle,mysql . . . ) ) * 스프링부트 버전에 따라 설정은 달라질 수 있음 * 
+Entity 단위로 Repositary 인터페이스를 상속받은 인터페이스 생성 ( )
+지정한 규칙에 맞게 메서드 추가 
+필요한 곳에 해당 인터페이스타입 주입해서 사용 
+
+
+정리 
+- 정해진 규칙에 따라 인터페이스만 작성하면 된다 -

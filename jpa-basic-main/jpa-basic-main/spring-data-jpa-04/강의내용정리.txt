@@ -1,0 +1,15 @@
+Specification :
+    Criteria를 이용해서 검색조건을 생성하는 Interface 
+
+람다로 간결하게 구현 :
+    Specification을 구현한 클래스를 매번 만들기 보다는 클래스 내부에 람다식을 이용해서 Specification 생성 
+
+검색 조건 조합 : 
+    Specification의 or/and Method로 이용해서 조합
+
+Specification + Paging , sort 
+
+SpecBuilder :
+    if절을 덜쓰기 위해 SpecBuilder 구현
+
+Specification Interface를 이용한 검색조건 생성 / 검색조건 조합 가능 

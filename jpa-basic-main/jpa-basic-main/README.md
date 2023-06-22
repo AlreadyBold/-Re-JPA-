@@ -37,9 +37,11 @@
 - Spring Data JPA 04 Specification을 이용한 검색 조건 지정: https://youtu.be/-znDGy-BQJk -- 2023/06/22 완
 - Spring Data JPA 05 기타: https://youtu.be/SYqknEb0wag
 
-## 참고하면 좋을 만한 블로그 URL
+## 참고하면 좋을 만한 URL
 
 - 영속성 관련 / Auto Increment가 포함된 Insert쿼리는 언제 나갈까? : https://velog.io/@sangwoo0727/JPA-Auto-Increment%EA%B0%80-%ED%8F%AC%ED%95%A8%EB%90%9C-Insert%EC%BF%BC%EB%A6%AC%EB%8A%94-%EC%96%B8%EC%A0%9C-%EB%82%98%EA%B0%88%EA%B9%8C
+
+- JPA Repositary를 상속하지 않은 이유 : https://youtu.be/MMH_ht8pf8U
 
 ## 로컬 환경 구성
 

@@ -1,0 +1,14 @@
+Count Method : 
+    long count()
+    long countByNameLike(String Keyword)
+    long count(Specification<T>spec)
+
+@Query : 
+    JPQL이 아닌 SQL 도 가능 ( NATIVE Query )
+
+한가지의 결과 조회 : 
+    User findByName( String name )
+    Optional<T> findByName( String name )
+
+Interface(Repositary) 를 상속받고 필요한 Method만 만드는 방법을 선호
+

@@ -32,7 +32,7 @@
 ## Spring Data JPA 기초 내용
 
 - Spring Data JPA 01 시작하기: https://youtu.be/1Q3Qtd5HZy4 -- 2023/06/21 완
-- Spring Data JPA 02 리포지터리 메서드 작성 규칙: https://youtu.be/qTiHaxVc6GY
+- Spring Data JPA 02 리포지터리 메서드 작성 규칙: https://youtu.be/qTiHaxVc6GY -- 2023/06/22 완
 - Spring Data JPA 03 정렬 페이징 @Query: https://youtu.be/2-f9RFCT9Ik
 - Spring Data JPA 04 Specification을 이용한 검색 조건 지정: https://youtu.be/-znDGy-BQJk
 - Spring Data JPA 05 기타: https://youtu.be/SYqknEb0wag

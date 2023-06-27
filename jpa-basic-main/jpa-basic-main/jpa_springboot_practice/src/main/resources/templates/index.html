@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header" class="alt">
+        <section id="banner" style="height:100%;">
+            <h1> JPA 연습장 1번 로그인 하기 </h1>
+            <br>
+            <br>
+            <br>
+            <section>
+                <form id="query" action="/login" method="GET" novalidate>
+                    <input type="text" id="userId" name="userId" placeholder="아이디를 입력하시오">
+                    <input type="password" id="pwd" name="pwd" placeholder="비밀번호를 입력하시오">
+                    <br>
+                </form>
+                <button value="검색" onclick="query()" class="button alt">검색</button>
+            </section>
+        </section>
+    </header>
+</body>
+<script>
+    function query() {
+        var name = $("#userId").val();
+        var pwd = $("#pwd").val();
+        if (name == "") {
+            alert(" 닉네임을 입력해주세요.");
+        } else if (pwd == "") {
+            alert(" 비밀번호를 입력해주세요.");
+        } else {
+            console.log(" 왜 되지 ? ");
+            document.getElementById("query").submit();
+        }
+        console.log(name);
+    }
+</script>
+
+</html>
